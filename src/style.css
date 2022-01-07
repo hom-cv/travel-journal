@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.app--window {
+  width: 550px;
+  height: 700px;
+  margin: 100px;
+  box-shadow: 1px 1px 5px rgb(97, 97, 97);
+}
+
+.app--cards {
+  height: 645px;
+  overflow: auto;
+  text-overflow: ellipsis;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+body {
+  font-family: Inter, sans-serif;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  margin: 0;
+  padding: 0;
+  background-color: #F55A5A;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+
+.header--img {
+  width: 24px;
+}
+
+.header--title {
+  color: white;
+  font-size: 15px;
+  font-weight: 200;
+  letter-spacing: -7.5%;
+}
+
+.card--container {
+  display:flex;
+  padding: 40px;
+  padding-bottom: 20px;
+  align-items: center;
+}
+
+.card--img {
+  width: 125px;
+  height: 168px;
+  object-fit: cover;
+  border-radius: 9px;
+}
+
+.card--text {
+  padding-left: 20px;
+}
+
+.card--location-pointer {
+  height: 10px;
+}
+
+.card--location-data {
+  display:flex;
+  align-items: center;
+  height: 10px;
+  padding-bottom: 10px;
+}
+
+.card--location-loc, .card--location-map, .card--location-desc {
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.card--location-loc {
+  text-transform: uppercase;
+  letter-spacing: 17%;
+  padding: 4px;
+  color: #2B283A;
+}
+
+.card--location-map {
+  color: #918E9B;
+  text-decoration: underline;
+  padding: 10px;
+}
+
+.card--location-name, .card--location-date {
+  color: #2B283A;
+  font-weight: 700;
+}
+
+
+.card--location-name {
+  font-size: 25px;
+}
+
+.card--location-date {
+  font-size: 10px;
+  padding-top: 10px;
+}
+
+.card--location-desc {
+  padding-top: 5px;
+}
